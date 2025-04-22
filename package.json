@@ -1,0 +1,31 @@
+{
+  "name": "playwright-example",
+  "version": "1.0.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:first": "npx playwright test --grep first --headed && npx playwright show-report",
+    "test:chromium": "npx playwright test --project chromium",
+    "test:local": "BASE_URL=http://localhost:4200, npx playwright test && npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aisabel/Playwright-example"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aisabel/Playwright-example/issues"
+  },
+  "homepage": "https://github.com/aisabel/Playwright-example#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
